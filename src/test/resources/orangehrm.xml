@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "">
+<suite name="OrangeHRM - UI Automation Test" verbose="1">
+    <test name="Run on Firefox">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="ui.orangehrm.user.Login_01"/>
+        </classes>
+    </test>
+
+</suite>
