@@ -49,8 +49,9 @@
                 <version>3.14.0</version>
                 <!-- Compiler code vs Java 17 -->
                 <configuration>
-                    <source>${maven.compiler.source}</source>
-                    <target>${maven.compiler.target}</target>
+                    <source>21</source>
+                    <target>21</target>
+                    <compilerArgs>--enable-preview</compilerArgs>
                 </configuration>
             </plugin>
             <!-- Run test -->

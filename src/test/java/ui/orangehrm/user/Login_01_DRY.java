@@ -1,5 +1,6 @@
 package ui.orangehrm.user;
 
+//Import từ thư viện
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -10,10 +11,14 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+//Import các class /interface từ package khác
+import javaSDET.Topic_01_Keywords;
+
 import java.time.Duration;
 
-public class Login_01 {
+public class Login_01_DRY {
     private WebDriver driver;
+    private Topic_01_Keywords topic01;
 
     @BeforeClass
     public void beforeClass() {
@@ -22,7 +27,7 @@ public class Login_01 {
         driver.manage().window().maximize();
     }
 
-    @Test
+    @Test //Upper Camel Case + Underscore
     public void Login_01_Empty(){
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
