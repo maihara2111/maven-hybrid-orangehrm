@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Data Table - UI Automation Test" verbose="1">
+
+    <parameter name="url" value="https://gofile.io/"></parameter>
+
+    <test name="Run on Firefox">
+        <parameter name="browser" value="Firefox"/>
+        <classes>
+            <class name="com.gofile.Level_13_Upload_File"/>
+        </classes>
+    </test>
+
+<!--    <test name="Run on Chrome">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <classes>-->
+<!--            <class name="com.orangehrm.Level_04_Page_Object"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Run on Edge">-->
+<!--        <parameter name="browser" value="Edge"/>-->
+<!--        <classes>-->
+<!--            <class name="com.orangehrm.Level_04_Page_Object"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>

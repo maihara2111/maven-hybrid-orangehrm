@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Open Cart - UI Automation Test" verbose="1">
+
+    <parameter name="userUrl" value="http://localhost:88/opencart"></parameter>
+    <parameter name="adminUrl" value="http://localhost:88/opencart/adm/"></parameter>
+
+    <test name="Run on Firefox">
+        <parameter name="browser" value="Firefox"/>
+        <classes>
+            <class name="com.opencart.Level_10_Multiple_Driver"/>
+        </classes>
+    </test>
+
+<!--    <test name="Run on Chrome">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <classes>-->
+<!--            <class name="com.orangehrm.Level_04_Page_Object"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Run on Edge">-->
+<!--        <parameter name="browser" value="Edge"/>-->
+<!--        <classes>-->
+<!--            <class name="com.orangehrm.Level_04_Page_Object"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>

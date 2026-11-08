@@ -1,13 +1,27 @@
-<!DOCTYPE suite SYSTEM "">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="OrangeHRM - UI Automation Test" verbose="1">
+
+    <parameter name="appUrl" value="http://localhost:88/orangehrm"></parameter>
+
     <test name="Run on Firefox">
-        <parameter name="browser" value="firefox" />
+        <parameter name="browser" value="Firefox"/>
         <classes>
-            <class name="ui.orangehrm.user.Login_01_DRY"/>
-            <class name="ui.orangehrm.user.Login_02_BasePage_I_Initial"/>
-            <class name="ui.orangehrm.user.Login_02_BasePage_II_Static"/>
-            <class name="ui.orangehrm.user.Login_02_BasePage_III_Extend"/>
+            <class name="com.orangehrm.Level_11_By_Locator"/>
         </classes>
     </test>
+
+<!--    <test name="Run on Chrome">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <classes>-->
+<!--            <class name="com.orangehrm.Level_04_Page_Object"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Run on Edge">-->
+<!--        <parameter name="browser" value="Edge"/>-->
+<!--        <classes>-->
+<!--            <class name="com.orangehrm.Level_04_Page_Object"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 </suite>
